@@ -1,0 +1,202 @@
+2025-06-06T15:34:30.297+0300	INFO	auth/main.go:17	ok
+{"level":"info","ts":"2025-06-06T15:36:06.426+0300","caller":"auth/main.go:17","msg":"ok"}
+2025-06-06T15:36:23.839+0300	INFO	auth/main.go:17	ok
+2025-06-06T15:36:23.839+0300	DEBUG	auth/main.go:18	debug
+2025-06-06T15:49:53.489+0300	INFO	auth/main.go:18	ok
+2025-06-06T15:49:53.489+0300	DEBUG	auth/main.go:19	debug
+2025-06-06T15:52:35.854+0300	INFO	auth/main.go:14	ok	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":"50012","Timeout":36000000000000}}}
+2025-06-06T15:53:02.827+0300	INFO	auth/main.go:14	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":"50012","Timeout":36000000000000}}}
+2025-06-06T15:55:47.068+0300	INFO	auth/main.go:16	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":"50012","Timeout":36000000000000}}}
+2025-06-06T15:55:58.596+0300	INFO	auth/main.go:16	Запуск приложения	{"\nКонфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":"50012","Timeout":36000000000000}}}
+2025-06-06T16:44:13.805+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000}}}
+2025-06-06T16:44:13.806+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-06T16:46:43.347+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000}}}
+2025-06-06T16:46:43.347+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-06T16:48:17.831+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000}}}
+2025-06-06T16:48:17.831+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-06T23:28:12.803+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000}}}
+2025-06-06T23:28:12.803+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T03:23:21.043+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000}}}
+2025-06-08T03:29:08.440+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","StoragePath":"./storage/auth.db","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000}}}
+2025-06-08T03:34:58.596+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"mysql://Drus:1@tcp(127.0.0.1:3306)/oldmine"}}
+2025-06-08T03:35:40.875+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine"}}
+2025-06-08T03:35:40.876+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T03:47:23.211+0300	INFO	auth/main.go:35	Приложение остановлено	{"main": "interrupt"}
+2025-06-08T03:47:23.211+0300	INFO	grpc/app.go:57	Остановка gRPC сервера	{"op": "grpcApp.Stop", "port": 50012}
+2025-06-08T03:50:41.581+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T03:50:41.582+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T03:50:52.520+0300	INFO	auth/main.go:35	Приложение остановлено	{"main": "interrupt"}
+2025-06-08T03:50:52.520+0300	INFO	grpc/app.go:57	Остановка gRPC сервера	{"op": "grpcApp.Stop", "port": 50012}
+2025-06-08T03:51:25.438+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T03:51:25.438+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T03:52:54.183+0300	INFO	auth/main.go:35	Приложение остановлено	{"main": "interrupt"}
+2025-06-08T03:52:54.184+0300	INFO	grpc/app.go:57	Остановка gRPC сервера	{"op": "grpcApp.Stop", "port": 50012}
+2025-06-08T03:52:56.462+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T03:52:56.462+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T03:54:50.437+0300	INFO	auth/main.go:35	Приложение остановлено	{"main": "interrupt"}
+2025-06-08T03:54:50.437+0300	INFO	grpc/app.go:57	Остановка gRPC сервера	{"op": "grpcApp.Stop", "port": 50012}
+2025-06-08T03:56:04.102+0300	INFO	auth/main.go:22	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T03:56:04.106+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T03:58:35.124+0300	INFO	auth/main.go:35	Приложение остановлено	{"main": "interrupt"}
+2025-06-08T03:58:35.124+0300	INFO	grpc/app.go:57	Остановка gRPC сервера	{"op": "grpcApp.Stop", "port": 50012}
+2025-06-08T03:59:54.645+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T03:59:54.646+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:01:50.071+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:01:50.074+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:02:20.918+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:02:55.490+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:02:57.506+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:02:58.122+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:02:58.625+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:02:59.023+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:02:59.433+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:03:07.414+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:03:15.005+0300	WARN	services/app.go:71	Пользователь не найден	{"op": "auth.Login", "email": "ex", "error": "Пользователь не найден"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:71
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:06:45.111+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:08:22.543+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":36000000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:08:22.544+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:09:36.613+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:09:36.614+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:09:40.495+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:09:47.422+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:09:47.423+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:13:49.306+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:13:49.307+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:15:42.986+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:15:42.987+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:15:46.609+0300	ERROR	services/app.go:125	Ошибка создания пользователя	{"op": "auth.Register", "email": "magna pariatur", "error": "mysql.SaveUser: Error 1054 (42S22): Unknown column 'hash_password' in 'field list'"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Register
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:125
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Register
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:68
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Register_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:127
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:16:46.513+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:16:46.513+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:16:52.083+0300	ERROR	services/app.go:125	Ошибка создания пользователя	{"op": "auth.Register", "email": "magna pariatur", "error": "mysql.SaveUser: Error 1054 (42S22): Unknown column 'hash_password' in 'field list'"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Register
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:125
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Register
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:68
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Register_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:127
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:17:25.676+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:17:25.677+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:17:29.425+0300	INFO	services/app.go:130	Пользователя зарегистрирован	{"op": "auth.Register", "email": "magna pariatur"}
+2025-06-08T04:21:22.762+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:21:22.763+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:21:43.566+0300	INFO	services/app.go:130	Пользователя зарегистрирован	{"op": "auth.Register", "email": "1"}
+2025-06-08T04:22:33.093+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:22:33.094+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:23:04.491+0300	WARN	services/app.go:89	Ошибка генерации токена	{"op": "auth.Login", "email": "andrew.galkin2018@gmail.com", "error": "key is of invalid type: ECDSA sign expects *ecdsa.PrivateKey"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:89
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:23:16.424+0300	WARN	services/app.go:89	Ошибка генерации токена	{"op": "auth.Login", "email": "andrew.galkin2018@gmail.com", "error": "key is of invalid type: ECDSA sign expects *ecdsa.PrivateKey"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:89
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:23:23.916+0300	INFO	services/app.go:151	Проверка пользователя на админа	{"op": "auth.IsAdmin", "userId": 1, "admin": true}
+2025-06-08T04:23:46.336+0300	INFO	services/app.go:130	Пользователя зарегистрирован	{"op": "auth.Register", "email": "1"}
+2025-06-08T04:23:55.162+0300	WARN	services/app.go:89	Ошибка генерации токена	{"op": "auth.Login", "email": "1", "error": "key is of invalid type: ECDSA sign expects *ecdsa.PrivateKey"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:89
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:35:04.625+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:35:04.626+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:35:10.842+0300	WARN	services/app.go:89	Ошибка генерации токена	{"op": "auth.Login", "email": "1", "error": "invalid key: Key must be a PEM encoded PKCS1 or PKCS8 key"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:89
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:35:41.543+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"a20sbnhjc2Z2b2lqa3NhZG9wZmtsamprc2RmaGdvaXphbCxkeGZtY2lvd3B3ZXJvamtmZG1uc20="}}
+2025-06-08T04:35:41.544+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:35:44.874+0300	WARN	services/app.go:89	Ошибка генерации токена	{"op": "auth.Login", "email": "1", "error": "failed to parse private key: invalid key: Key must be a PEM encoded PKCS1 or PKCS8 key"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:89
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:38:26.728+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"TUlJREt6Q0NBaE9nQXdJQkFnSVJBT09JMGsvQkdPSkRLRXpvb09Sdk5oc3dEUVlKS29aSWh2Y05BUUVMQlFBdyBnWW94RWpBUUJnTlZCQU1NQ1d4a1pHZHZMbTVsZERFTU1Bb0dBMVVFQ3d3RFpHVjJNUTR3REFZRFZRUUtEQVZzIFpHUm5iekVMTUFrR0ExVUVCaE1DUTA0eEl6QWhCZ2txaGtpRzl3MEJDUUVXRkd4bFkyaGxibWRoWkcxcGJrQXggTWpZdVkyOXRNUkV3RHdZRFZRUUhEQWh6YUdGdVoyaGhhVEVSTUE4R0ExVUVDQXdJYzJoaGJtZG9ZV2t3SGhjTiBNalV3TmpBM01qQXpOekE1V2hjTk1qY3dOakEzTWpBek56QTVXakFYTVJVd0V3WURWUVFEREF6Umk5Q3kwTERSIGk5Q3kwTEF3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ0JOR3F6M3NBNHpiNjUgOEtVYThLclUxcEx5NzhZdHovVUl0L0dWeE03MHlvS3hlK0VjMEdJWDhLUnZnbHF4NWVDQk10OHVtR1FsQmQ4RyA2WE1HOWRvaENvcDB4bU4ram4rd3o1ZWdrV21HNzJYelJIWXRJUUM5eC9SZTRpdVZKZzBtRm8vdTRBWk9LWHBFIGpGTVhnOG13ZXBGQ2NLTEZnK0VnbHB2Nit4R1N6L3EvY29IMjZlSVM3eTZLalliNkFhRWhQWUtpbldjY1RDZ3ogT1VDbWs0VFA5TmFUMmI3K0tKc1hLR1B3aklJSTk3N1hueUQ4K01GQVBCRmpYb1BVdWNWWUtCVDV4dy9tK1A5LyBMNXRlWUJweitWSnFhcVZjM3hJRjJQR0lsSGdaTHpFVVI5WEZLRFpVMHZGYjFncDE0cng5Z00yVStnNGJRSmlYIG51UWlDaWY3QWdNQkFBRXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQjdHbnNqUDYvSmdQYjZlOHN4c3hNN3Qgdk9KbERJMlptbkFVbTJSK0ZrQVJic1F4ek14ZmsxcXRIN1VzL0VwTWR1dDUrWWNFMkZ4MFZIMGJra1d5NUwzQSA1ZHV1WTBDbVhlNXpNTlpkY29JSXEvSkRCOWk3ait5cS9SR2tBUytlSXBwNWIzQVQxQjZpY3dCRGNPczM3SmsyIEZwQ3dlRHUzVGMvc0x6amJicWZCeDRncStUOS9FSGhyd2V2NGdpVGY1VGJybUI3eVJTZytNMHZEeFQ0ZGJBaU4gcDNnT2V2L2Vkc0pReXBqWXNDbnh1K0lpQmVUZWhFVjg3Ti9odXQ1SjhQVzNUZmRKbVpTaGplMHpnZ25xTzB2QSBsM0RFaDhZbFZ4S3E3ZUZzcldqMHZ2dDVONkNyYlJhVGZNbXBJTnIySkhQRHFIeUVYcHYv"}}
+2025-06-08T04:38:26.728+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
+2025-06-08T04:38:31.346+0300	WARN	services/app.go:89	Ошибка генерации токена	{"op": "auth.Login", "email": "1", "error": "failed to parse private key: invalid key: Key must be a PEM encoded PKCS1 or PKCS8 key"}
+github.com/DrusGalkin/auth-grpc-service/internal/services.(*Auth).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/services/app.go:89
+github.com/DrusGalkin/auth-grpc-service/internal/grpc/auth.(*serverAPI).Login
+	/home/drussic/Документы/OldMine/backend/auth/internal/grpc/auth/server.go:49
+github.com/DrusGalkin/auth-protos/gen/go/auth._Auth_Login_Handler
+	/home/drussic/go/pkg/mod/github.com/!drus!galkin/auth-protos@v0.0.1/gen/go/auth/auth_grpc.pb.go:145
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1405
+google.golang.org/grpc.(*Server).handleStream
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1815
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/drussic/go/pkg/mod/google.golang.org/grpc@v1.73.0/server.go:1035
+2025-06-08T04:40:30.519+0300	INFO	auth/main.go:19	Запуск приложения	{"Конфиг найден": {"Env":"local","TokenTTl":3600000000000,"GRPC":{"Port":50012,"Timeout":5000000000},"DBUrl":"Drus:1@tcp(127.0.0.1:3306)/oldmine","Secret":"TUlJREt6Q0NBaE9nQXdJQkFnSVJBT09JMGsvQkdPSkRLRXpvb09Sdk5oc3dEUVlKS29aSWh2Y05BUUVMQlFBdyBnWW94RWpBUUJnTlZCQU1NQ1d4a1pHZHZMbTVsZERFTU1Bb0dBMVVFQ3d3RFpHVjJNUTR3REFZRFZRUUtEQVZzIFpHUm5iekVMTUFrR0ExVUVCaE1DUTA0eEl6QWhCZ2txaGtpRzl3MEJDUUVXRkd4bFkyaGxibWRoWkcxcGJrQXggTWpZdVkyOXRNUkV3RHdZRFZRUUhEQWh6YUdGdVoyaGhhVEVSTUE4R0ExVUVDQXdJYzJoaGJtZG9ZV2t3SGhjTiBNalV3TmpBM01qQXpOekE1V2hjTk1qY3dOakEzTWpBek56QTVXakFYTVJVd0V3WURWUVFEREF6Umk5Q3kwTERSIGk5Q3kwTEF3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ0JOR3F6M3NBNHpiNjUgOEtVYThLclUxcEx5NzhZdHovVUl0L0dWeE03MHlvS3hlK0VjMEdJWDhLUnZnbHF4NWVDQk10OHVtR1FsQmQ4RyA2WE1HOWRvaENvcDB4bU4ram4rd3o1ZWdrV21HNzJYelJIWXRJUUM5eC9SZTRpdVZKZzBtRm8vdTRBWk9LWHBFIGpGTVhnOG13ZXBGQ2NLTEZnK0VnbHB2Nit4R1N6L3EvY29IMjZlSVM3eTZLalliNkFhRWhQWUtpbldjY1RDZ3ogT1VDbWs0VFA5TmFUMmI3K0tKc1hLR1B3aklJSTk3N1hueUQ4K01GQVBCRmpYb1BVdWNWWUtCVDV4dy9tK1A5LyBMNXRlWUJweitWSnFhcVZjM3hJRjJQR0lsSGdaTHpFVVI5WEZLRFpVMHZGYjFncDE0cng5Z00yVStnNGJRSmlYIG51UWlDaWY3QWdNQkFBRXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQjdHbnNqUDYvSmdQYjZlOHN4c3hNN3Qgdk9KbERJMlptbkFVbTJSK0ZrQVJic1F4ek14ZmsxcXRIN1VzL0VwTWR1dDUrWWNFMkZ4MFZIMGJra1d5NUwzQSA1ZHV1WTBDbVhlNXpNTlpkY29JSXEvSkRCOWk3ait5cS9SR2tBUytlSXBwNWIzQVQxQjZpY3dCRGNPczM3SmsyIEZwQ3dlRHUzVGMvc0x6amJicWZCeDRncStUOS9FSGhyd2V2NGdpVGY1VGJybUI3eVJTZytNMHZEeFQ0ZGJBaU4gcDNnT2V2L2Vkc0pReXBqWXNDbnh1K0lpQmVUZWhFVjg3Ti9odXQ1SjhQVzNUZmRKbVpTaGplMHpnZ25xTzB2QSBsM0RFaDhZbFZ4S3E3ZUZzcldqMHZ2dDVONkNyYlJhVGZNbXBJTnIySkhQRHFIeUVYcHYv"}}
+2025-06-08T04:40:30.519+0300	INFO	grpc/app.go:45	Старт gRPC сервар	{"op": "grpcApp.run", "port": 50012}
