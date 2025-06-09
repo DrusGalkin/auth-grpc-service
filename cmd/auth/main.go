@@ -5,10 +5,11 @@ import (
 	"github.com/DrusGalkin/auth-grpc-service/internal/config"
 	log "github.com/DrusGalkin/auth-grpc-service/pkg/lib/logger"
 	"go.uber.org/zap"
+	"os"
+	"os/signal"
+	"syscall"
 )
 
-// Команда для старта
-// go run cmd/auth/main.go --config=./config/local.yaml
 func main() {
 	// Конфиг
 	cfg := config.MustLoadConfig()
@@ -24,12 +25,12 @@ func main() {
 	// gRPC сервер
 	application.GRPCServer.MustRun()
 
-	//// Остановка gRPC сервера
-	//stop := make(chan os.Signal, 1)
-	//signal.Notify(stop, syscall.SIGTERM, syscall.SIGINT)
-	//
-	//sign := <-stop
-	//logger.Info("Приложение остановлено", zap.Any("main", sign.String()))
-	//
-	//application.GRPCServer.Stop()
+	// Остановка gRPC сервера
+	stop := make(chan os.Signal, 1)
+	signal.Notify(stop, syscall.SIGTERM, syscall.SIGINT)
+
+	sign := <-stop
+	logger.Info("Приложение остановлено", zap.Any("main", sign.String()))
+
+	application.GRPCServer.Stop()
 }
