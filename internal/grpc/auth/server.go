@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/DrusGalkin/auth-grpc-service/internal/lib/jwt"
 	"github.com/DrusGalkin/auth-grpc-service/internal/services"
 	"github.com/DrusGalkin/auth-grpc-service/internal/storage"
 	pk "github.com/DrusGalkin/auth-protos/gen/go/auth"
@@ -17,7 +18,7 @@ type Auth interface {
 		ctx context.Context,
 		email string,
 		password string,
-	) (string, error)
+	) (*jwt.VerifyResponse, error)
 
 	Register(
 		ctx context.Context,
@@ -30,6 +31,16 @@ type Auth interface {
 		ctx context.Context,
 		userId int64,
 	) (bool, error)
+
+	Refresh(
+		ctx context.Context,
+		refreshToken string,
+	) (*jwt.VerifyResponse, error)
+
+	ValidToken(
+		ctx context.Context,
+		token string,
+	) (*jwt.Claim, error)
 }
 
 type serverAPI struct {
@@ -56,7 +67,8 @@ func (s *serverAPI) Login(ctx context.Context, req *pk.LoginRequest) (*pk.LoginR
 	}
 
 	return &pk.LoginResponse{
-		Token: token,
+		Access:  token.Access,
+		Refresh: token.Refresh,
 	}, err
 }
 
@@ -94,5 +106,28 @@ func (s *serverAPI) IsAdmin(ctx context.Context, req *pk.IsAdminRequest) (*pk.Is
 
 	return &pk.IsAdminResponse{
 		IsAdmin: isAdmin,
+	}, nil
+}
+
+func (s *serverAPI) Refresh(ctx context.Context, req *pk.RefreshRequest) (*pk.RefreshResponse, error) {
+	tokens, err := s.auth.Refresh(ctx, req.GetRefresh())
+	if err != nil {
+		return nil, status.Error(codes.Internal, "Невалидный токен")
+	}
+
+	return &pk.RefreshResponse{
+		Access:  tokens.Access,
+		Refresh: tokens.Refresh,
+	}, nil
+}
+func (s *serverAPI) ValidToken(ctx context.Context, req *pk.ValidTokenRequest) (*pk.ValidTokenResponse, error) {
+	claim, err := s.auth.ValidToken(ctx, req.Access)
+	if err != nil {
+		return nil, status.Error(codes.Internal, "Невалидный токен")
+	}
+
+	return &pk.ValidTokenResponse{
+		UserId: int64(claim.UserID),
+		Email:  claim.Email,
 	}, nil
 }

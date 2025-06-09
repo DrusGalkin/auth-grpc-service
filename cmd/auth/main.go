@@ -19,7 +19,7 @@ func main() {
 	logger.Info("Запуск приложения", zap.Any("Конфиг найден", cfg))
 
 	// Приложение
-	application := app.New(logger, cfg.GRPC.Port, cfg.DBUrl, cfg.Secret, cfg.TokenTTl)
+	application := app.New(logger, cfg.GRPC.Port, cfg.DBUrl, cfg.Secret, cfg.AccessTime, cfg.RefreshTime)
 
 	// gRPC сервер
 	application.GRPCServer.MustRun()

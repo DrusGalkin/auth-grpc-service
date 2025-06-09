@@ -18,7 +18,8 @@ func New(
 	grpcPort int,
 	storagePath string,
 	secret []byte,
-	tokenTTl time.Duration,
+	tokenAccess time.Duration,
+	tokenRefresh time.Duration,
 ) *App {
 	storage := storageDB.New(storagePath)
 	authService := services.New(
@@ -28,7 +29,8 @@ func New(
 		},
 		storage,
 		storage,
-		tokenTTl,
+		tokenAccess,
+		tokenRefresh,
 	)
 
 	grpcApp := grpcapp.NewGRPCApp(logger, grpcPort, authService)

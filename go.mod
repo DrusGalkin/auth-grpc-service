@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.23.10
 
 require (
-	github.com/DrusGalkin/auth-protos v0.0.1
+	github.com/DrusGalkin/auth-protos v0.0.2
 	github.com/ilyakaznacheev/cleanenv v1.5.0
 	go.uber.org/zap v1.27.0
 	google.golang.org/grpc v1.73.0

@@ -17,7 +17,8 @@ type Auth struct {
 	secret       models.SecretApp
 	userProvider UserProvider
 	userSaver    UserSaver
-	tokenTTl     time.Duration
+	tokenAccess  time.Duration
+	tokenRefresh time.Duration
 }
 
 type UserSaver interface {
@@ -43,14 +44,16 @@ func New(
 	secret models.SecretApp,
 	userProvider UserProvider,
 	userSaver UserSaver,
-	tokenTTl time.Duration,
+	tokenAccess time.Duration,
+	tokenRefresh time.Duration,
 ) *Auth {
 	return &Auth{
 		log:          log,
 		secret:       secret,
 		userProvider: userProvider,
 		userSaver:    userSaver,
-		tokenTTl:     tokenTTl,
+		tokenAccess:  tokenAccess,
+		tokenRefresh: tokenRefresh,
 	}
 }
 
@@ -58,7 +61,7 @@ func (a *Auth) Login(
 	ctx context.Context,
 	email string,
 	password string,
-) (string, error) {
+) (*jwt.VerifyResponse, error) {
 	const op = "auth.Login"
 	log := a.log.With(
 		zap.String("op", op),
@@ -70,28 +73,28 @@ func (a *Auth) Login(
 		if errors.Is(err, storage.ErrUserNotFound) {
 			log.Warn("Пользователь не найден", zap.Error(err))
 
-			return "", fmt.Errorf("%s: %w", op, ErrInvalidCredentials)
+			return nil, fmt.Errorf("%s: %w", op, ErrInvalidCredentials)
 		}
 
 		log.Warn("Ошибка получения пользователя", zap.Error(err))
 
-		return "", fmt.Errorf("%s: %w", op, err)
+		return nil, fmt.Errorf("%s: %w", op, err)
 	}
 
 	if err := bcrypt.CompareHashAndPassword(user.HashPassword, []byte(password)); err != nil {
 		log.Warn("Невалидные данные", zap.Error(err))
 
-		return "", fmt.Errorf("%s: %w", op, ErrInvalidCredentials)
+		return nil, fmt.Errorf("%s: %w", op, ErrInvalidCredentials)
 	}
 
-	token, err := jwt.NewToken(user, a.secret, a.tokenTTl)
+	tokens, err := jwt.NewTokens(user, a.secret, a.tokenAccess, a.tokenRefresh)
 	if err != nil {
-		log.Warn("Ошибка генерации токена", zap.Error(err))
+		log.Warn("Ошибка генерации токенов", zap.Error(err))
 
-		return "", fmt.Errorf("%s: %w", op, err)
+		return nil, fmt.Errorf("%s: %w", op, err)
 	}
 
-	return token, nil
+	return tokens, nil
 }
 
 func (a *Auth) Register(
@@ -151,4 +154,22 @@ func (a *Auth) IsAdmin(
 	log.Info("Проверка пользователя на админа", zap.Bool("admin", admin))
 
 	return admin, nil
+}
+
+func (s *Auth) Refresh(ctx context.Context, refreshToken string) (*jwt.VerifyResponse, error) {
+
+	tokens, err := jwt.RefreshToken(refreshToken, s.secret, s.tokenAccess, s.tokenRefresh)
+	if err != nil {
+		return nil, err
+	}
+
+	return tokens, nil
+}
+
+func (s *Auth) ValidToken(ctx context.Context, token string) (*jwt.Claim, error) {
+	claim, err := jwt.ValidToken(token, s.secret)
+	if err != nil {
+		return nil, err
+	}
+	return claim, nil
 }

@@ -9,11 +9,12 @@ import (
 )
 
 type Config struct {
-	Env      string        `yaml:"env" env-default:"local"`
-	TokenTTl time.Duration `yaml:"token_ttl" env-required:"true"`
-	GRPC     GRPCConfig    `yaml:"grpc"`
-	DBUrl    string
-	Secret   []byte
+	Env         string        `yaml:"env" env-default:"local"`
+	AccessTime  time.Duration `yaml:"time_access" env-required:"true"`
+	RefreshTime time.Duration `yaml:"time_refresh" env-required:"true"`
+	GRPC        GRPCConfig    `yaml:"grpc"`
+	DBUrl       string
+	Secret      []byte
 }
 
 type GRPCConfig struct {
