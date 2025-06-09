@@ -8,7 +8,7 @@ import (
 )
 
 type Client struct {
-	auth pk.AuthClient
+	pk.AuthClient
 }
 
 func NewClient(address string) (*Client, error) {
