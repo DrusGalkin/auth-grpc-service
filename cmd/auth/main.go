@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/DrusGalkin/auth-grpc-service/internal/app"
 	"github.com/DrusGalkin/auth-grpc-service/internal/config"
-	log "github.com/DrusGalkin/auth-grpc-service/internal/lib/logger"
+	log "github.com/DrusGalkin/auth-grpc-service/pkg/lib/logger"
 	"go.uber.org/zap"
 )
 
